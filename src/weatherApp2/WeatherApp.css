@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Raleway&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Roboto:wght@100;300&display=swap');
+
+.wrapper{
+    height: 100vh;
+    background-color: rgb(28, 28, 28);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* place-items: center; */
+    color: white;
+}
+
+.input{
+    display: flex;
+    align-items: flex-end;
+    min-width: 300px;
+}
+.input input{
+    width: 80%;
+    border: none;
+    padding: 8px 15px;
+    outline: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.input button{
+    border: none;
+    padding: 8px 10px;
+    background-color: aquamarine;
+    color: black; 
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.weatherBox{
+    background-color:azure;
+    color: black;
+    border-radius: 8px;
+    min-width: 360px;
+    position: relative;
+    top: -100px;
+}
+
+.weatherBox .weatherIcon{
+    display: grid;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherIcon{
+    animation: wave 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes wave{
+    0%{
+        transform: translateX(6px);
+    }
+    60%{
+        transform: translateX(-6px);
+    }
+}
+@keyframes wave{
+    0%{
+        transform: translateX(6px);
+    }
+    60%{
+        transform: translateX(-6px);
+    }
+}
+
+.weatherIcon h1{
+    font-size: 6rem;
+}
+.tempBox{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.tempBox .temp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+
+}
+.deg p{
+    font-size: 3.5rem;
+    font-weight: 100;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.type{
+    margin-left: 20px;
+}
+.type p{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+.type .stateName{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.time{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: aquamarine;
+    color: black;
+}
+.time p{
+    font-weight: bold;
+    font-size: 18px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.weatherDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 15px;
+    text-align: left;
+
+}
+.detailBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailBox span:not(:first-child){
+    margin-left: 10px;
+}
+.detailBox .detailIcon{
+    display: inline-block;
+    font-size: 2rem;
+}
+.detailBox .detailText{
+    font-size: 13px;
+}
+.time .date{
+    font-size: 17px;
+    font-family: Roboto;
+}

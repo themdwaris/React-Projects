@@ -1,0 +1,58 @@
+.sliderContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(19, 19, 19);
+}
+.sliderContainer h1{
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.sliderContainer .img{
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+}
+.imgSlider{
+    padding: 10px;
+    text-align: center;
+    transition: ease 2s;
+}
+.imgSlider img{
+    width: 80%;
+    border-radius: 10px;
+}
+.btnControl{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+
+}
+.btnControl button{
+    border:  none;
+    padding: 7px 14px;
+    background-color: white;
+    color: rgb(19, 19, 19);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dots{
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.dots span{
+    background-color: white;
+    font-weight: bold;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+
+}
